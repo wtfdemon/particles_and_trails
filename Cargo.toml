@@ -1,0 +1,23 @@
+[package]
+name = "bevy_particles_and_trails"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "Every billboard particle and ribbon trail in one buffer: one atlas, one draw call"
+
+[dependencies]
+# Minimal on purpose: a game depending on this must stay free to build a
+# render-less server without cargo feature unification dragging in all of bevy.
+bevy = { version = "0.19", default-features = false, features = ["bevy_core_pipeline", "bevy_image"] }
+bytemuck = { version = "1", features = ["derive"] }
+
+# Examples want a window, a renderer and a png loader.
+[dev-dependencies]
+bevy = { version = "0.19", features = ["png"] }
+
+# Bevy is unusable in unoptimized debug builds
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
