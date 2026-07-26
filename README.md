@@ -1,8 +1,10 @@
 # bevy_particles_and_trails
 
-Every billboard particle and every ribbon trail in your game, in **one draw
-call**, on the web. Bevy 0.19. Retro spritesheet FX, the Quake way: a fixed
-particle budget, no per-particle entities, no per-frame allocations.
+Giga-fast trails and particles for WebGPU and WebGL2. One buffer, one memcpy, one 
+material, one drawcall. Profiled on Firefox & Chrome, it's close to as cheap 
+as it gets.
+
+
 
 ```rust
 app.add_plugins(ParticlesAndTrailsPlugin {
