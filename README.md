@@ -6,6 +6,8 @@ as it gets.
 
 <img width="960" height="450" alt="readme5_sharp" src="https://github.com/user-attachments/assets/307bfeae-c498-4ddb-acd2-6976c9b713e3" />
 
+Random trivia: Used to be really easy to do this trick back in the OpenGL days. Doing a memcpy into a VBO was a line or two. Now, 
+with WebGPU, bevy, and whatnot, things need an unprecedented amount of ceremony. Useful to have a laid out example here, done and tested.
 
 ```rust
 app.add_plugins(ParticlesAndTrailsPlugin {
