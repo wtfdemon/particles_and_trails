@@ -1,9 +1,10 @@
 # bevy_particles_and_trails
 
-Giga-fast trails and particles for WebGPU and WebGL2. One buffer, one memcpy, one 
+The particles & trails implementation for [demons.wtf](https://demons.wtf). One buffer, one memcpy, one 
 material, one drawcall. Profiled on Firefox & Chrome, it's close to as cheap 
-as it gets.
+as it gets. 
 
+<img width="960" height="450" alt="readme5_sharp" src="https://github.com/user-attachments/assets/307bfeae-c498-4ddb-acd2-6976c9b713e3" />
 
 
 ```rust
